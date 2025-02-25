@@ -13,3 +13,12 @@ head.next = new ListNode(2);
 head.next.next = new ListNode(3);
 // [1 | *] -> [2 | *] -> [3 | Null] 
 
+//Traversing the linked list
+function traverseLinkedList(head){
+    let currentNode = head;
+    while(currentNode !== null){
+        console.log(currentNode.value); //print current node value
+        currentNode = currentNode.next; //move to next node
+    }
+}
+
