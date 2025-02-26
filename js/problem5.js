@@ -1,13 +1,11 @@
-function isPrime(num){
-    if(num <= 1) {
-        console.log(`${num} is not prime number`);
+function isPrime(n) {
+    if (n < 2) return false; 
+    for (let i = 2; n>i; i++) {
+        if (n % i === 0) return `${n} is not a prime num`; 
     }
-    for(let i=2; i <=num;i++){
-        if(num% i===0){
-            console.log(`${num} is not prime number`);
-        }else{
-            console.log(`${num} is Prime number`);
-        }
-    }
+    return `${n} is prime number`;
 }
-console.log(isPrime(2))
+
+
+console.log(isPrime(20));  
+
