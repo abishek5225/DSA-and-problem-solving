@@ -7,6 +7,6 @@ function high(n){
     }
     return num
 }
-console.log(high([1, 2, 3, 4, 5]));
+console.log(high([10, 2, 3, 4, 5]));
 
 console.log("running")
