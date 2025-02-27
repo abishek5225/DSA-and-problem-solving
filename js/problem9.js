@@ -7,3 +7,4 @@ function missingNumber(arr){
 
     return expectedSum-actualSum;
 }
+console.log(missingNumber([3,0,1])); 
