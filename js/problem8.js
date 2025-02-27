@@ -14,4 +14,5 @@ function secondHighest(arr) {
     return secondhighnum 
     
 }
-console.log(secondHighest([10,5,2,8,100,90,200,150])); 
+console.log(secondHighest([10,5,2,8,100,90,200,150]));//output 150
+
