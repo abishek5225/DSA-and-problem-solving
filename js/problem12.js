@@ -9,4 +9,8 @@ myMap.set("gender", "lauda");
 myMap.set("dob", "1/1/1970");
 myMap.set("age",100)
 
-console.log(myMap);
+//console.log(myMap);
+
+for(let container of myMap){
+    console.log(container);
+}
