@@ -25,3 +25,6 @@ const books = [
 
 const fictionBooks = books.filter((book) => book.genre === "fiction");
 console.log(fictionBooks);
+
+const edition = books.filter((args)=> args.edition>2000)
+console.log(edition)
