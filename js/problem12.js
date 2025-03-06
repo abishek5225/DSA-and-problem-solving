@@ -9,5 +9,4 @@ const evennums=nums.forEach((item)=>{
 
 // const evennums = nums.filter((item)=>item%2==0)
 
-console.log(result);
-
+console.log(result)
