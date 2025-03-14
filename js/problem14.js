@@ -1,3 +1,5 @@
+//creating a basic promise
+/*
 let myPromise = new Promise((resolve, reject)=>{
     setTimeout(()=>{
         resolve("task completed")
@@ -6,4 +8,14 @@ let myPromise = new Promise((resolve, reject)=>{
 
 myPromise.then(result =>{
     console.log(result);
+})
+*/
+
+//handling errors with reject()
+
+let myPromise = new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+        let success = false
+        
+    })
 })
