@@ -12,7 +12,7 @@ myPromise.then(result =>{
 */
 
 //handling errors with reject()
-
+/*
 let myPromise = new Promise((resolve, reject)=>{
     setTimeout(()=>{
         let success = false
@@ -26,3 +26,4 @@ let myPromise = new Promise((resolve, reject)=>{
 })
 myPromise.then(result=> console.log(result))
 .catch(error => console.log("error", error))
+*/
