@@ -9,5 +9,7 @@ function firstNonRepeatingChar(str){
             return char
         }
     }
+    return null
 }
 
+console.log(firstNonRepeatingChar('aabbccde'));
