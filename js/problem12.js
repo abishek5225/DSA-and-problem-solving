@@ -13,7 +13,7 @@ const evennums=nums.forEach((item)=>{
 
 console.log(result)
 */
-
+/*
 const books = [
   { title: "Book1", genre: "fiction", publish: 1981, edition: 2004 },
   { title: "Book2", genre: "non-fiction", publish: 1985, edition: 2005 },
@@ -28,3 +28,5 @@ console.log(fictionBooks);
 
 const edition = books.filter((args)=> args.edition>2000)
 console.log(edition)
+*/
+
