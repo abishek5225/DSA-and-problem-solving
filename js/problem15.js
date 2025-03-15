@@ -22,8 +22,16 @@ async function fetchData(){
     try{
         let response = await fetch('https://jsonplaceholder.typicode.com/posts')
         let data = await response.json()
-        console.log(data)
+        
+        let container= document.getElementById('container')
+
+        container.innerHTML = `<h2>${data.title}</h2>
+        <p>${data.body}</p>`
+            
+
     }catch(error){
         console.log("error fetching data:", error)
     }
-}fetchData()
+}
+
+    fetchData()
