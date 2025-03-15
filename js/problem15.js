@@ -3,3 +3,9 @@ function delay(ms){
         setTimeout(resolve,ms)
     })
 }
+
+async function example(){
+    console.log('start')
+    await delay(3000)
+    
+}
