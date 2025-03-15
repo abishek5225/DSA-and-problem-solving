@@ -1,4 +1,6 @@
 //creating a basic promise
+
+
 /*
 let myPromise = new Promise((resolve, reject)=>{
     setTimeout(()=>{
@@ -29,8 +31,12 @@ myPromise.then(result=> console.log(result))
 .catch(error => console.log("error", error))
 */
 
+
 //channing multiple .then() when we need to perform multiple async tasks
 
+
+
+/*
 new Promise((resolve) => {
   setTimeout(() => {
     resolve(10);
@@ -46,3 +52,31 @@ new Promise((resolve) => {
   }).then((result)=>{
     console.log("Third result:", result);
   })
+
+*/
+
+
+//Promise.all() method
+
+
+let promise1 = new Promise((resolve)=>{
+  setTimeout(()=>{
+    resolve('task 1 done');
+  },3000)
+})
+
+let promise2 = new Promise((resolve)=>{
+  setTimeout(()=>{
+    resolve('task 2 done');
+  },6000)
+})
+
+let promise3 = new Promise((resolve)=>{
+  setTimeout(()=>{
+    resolve('task 3 done');
+  },9000)
+})
+
+Promise.all([promise1, promise2, promise3]).then((result)=>{
+  console.log(result);
+})
