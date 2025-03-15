@@ -58,7 +58,7 @@ new Promise((resolve) => {
 
 //Promise.all() method
 
-
+/*
 let promise1 = new Promise((resolve)=>{
   setTimeout(()=>{
     resolve('task 1 done');
@@ -80,3 +80,4 @@ let promise3 = new Promise((resolve)=>{
 Promise.all([promise1, promise2, promise3]).then((result)=>{
   console.log(result);
 })
+*/
