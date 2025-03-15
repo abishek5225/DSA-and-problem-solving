@@ -36,3 +36,7 @@ new Promise((resolve)=>{
         resolve(10)
     },1000)
 })
+.then(result=>{
+    console.log("First result:", result)
+    return result *2;
+}).then(result)
