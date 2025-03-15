@@ -12,6 +12,7 @@ myPromise.then(result =>{
 */
 
 //handling errors with reject()
+
 /*
 let myPromise = new Promise((resolve, reject)=>{
     setTimeout(()=>{
@@ -27,3 +28,11 @@ let myPromise = new Promise((resolve, reject)=>{
 myPromise.then(result=> console.log(result))
 .catch(error => console.log("error", error))
 */
+
+//channing multiple .then() when we need to perform multiple async tasks
+
+new Promise((resolve)=>{
+    setTimeout(()=>{
+        resolve(10)
+    },1000)
+})
