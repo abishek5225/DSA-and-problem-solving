@@ -31,12 +31,18 @@ myPromise.then(result=> console.log(result))
 
 //channing multiple .then() when we need to perform multiple async tasks
 
-new Promise((resolve)=>{
-    setTimeout(()=>{
-        resolve(10)
-    },1000)
+new Promise((resolve) => {
+  setTimeout(() => {
+    resolve(10);
+  }, 1000);
 })
-.then(result=>{
-    console.log("First result:", result)
-    return result *2;
-}).then(result)
+  .then((result) => {
+    console.log("First result:", result);
+    return result * 2;
+  })
+  .then((result) => {
+    console.log("Second result:", result);
+    return result * 2;
+  }).then((result)=>{
+    console.log("Third result:", result);
+  })
