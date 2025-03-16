@@ -8,6 +8,27 @@
 <body>
     <h1 style="font-size: 50px;">Hello World!</h1>
     <div id="container"></div>
-    <script src="problem15.js"></script>
+    <script src="problem15.js">
+        async function fetchData(){
+    try{
+        let response = await fetch('https://jsonplaceholder.typicode.com/1')
+        console.log('Response: '+response)
+
+        let data = await response.json()
+        console.log('Data: '+data)
+        
+        let container= document.getElementById('container')
+
+        container.innerHTML = `<h2>${data.title}</h2>
+        <p>${data.body}</p>`;
+            
+    
+    }catch(error){
+        console.log("error fetching data:", error)
+    }
+}
+
+    fetchData()
+    </script>
 </body>
 </html>

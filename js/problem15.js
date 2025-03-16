@@ -18,20 +18,3 @@ example()
 
 // fetching data from an API using async/await
 
-async function fetchData(){
-    try{
-        let response = await fetch('https://jsonplaceholder.typicode.com/1')
-        let data = await response.json()
-        
-        let container= document.getElementById('container')
-
-        container.innerHTML = `<h2>${data.title}</h2>
-        <p>${data.body}</p>`;
-            
-    
-    }catch(error){
-        console.log("error fetching data:", error)
-    }
-}
-
-    fetchData()
