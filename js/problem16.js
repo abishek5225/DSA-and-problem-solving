@@ -6,7 +6,9 @@ function bubbleSort(arr){
     for(let i =0;i<n-1;i++){
         swapped = false
         for(let j=0;j<n-1;i++){
-            
+            if(arr[j]>arr[j+1]){
+                
+            }
         }
     }
 }
