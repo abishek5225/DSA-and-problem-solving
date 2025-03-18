@@ -11,5 +11,10 @@ function bubbleSort(arr){
                 swapped = true;
             }
         }
+        if(!swapped){
+            break;
+        }
     }
+    return arr;
 }
+console.log();
