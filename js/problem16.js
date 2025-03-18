@@ -7,7 +7,8 @@ function bubbleSort(arr){
         swapped = false
         for(let j=0;j<n-1;i++){
             if(arr[j]>arr[j+1]){
-                
+                [arr[j], arr[j+1]] = [arr[j+1], arr[j]];
+                swapped = true;
             }
         }
     }
