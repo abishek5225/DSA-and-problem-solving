@@ -7,7 +7,9 @@ function bubbleSort(arr){
         swapped = false
         for(let j=0;j<n-1;i++){
             if(arr[j]>arr[j+1]){
-                [arr[j], arr[j+1]] = [arr[j+1], arr[j]];
+               let temp = arr[j];
+               arr[j] = arr[j+1];
+                arr[j+1] = temp;
                 swapped = true;
             }
         }
@@ -18,5 +20,4 @@ function bubbleSort(arr){
     return arr;
 }
 console.log("helloworld")
-console.log(bubbleSort([5,3,8,4,2])) // [2,3,4,5,8]
-
+console.log(bubbleSort([5,3,8,4,2]))
